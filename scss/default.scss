@@ -1,0 +1,14 @@
+@import "shared-config";
+
+// Define colors
+// ------------------------------------------------
+$theme-colors: (
+  "primary": #007bff,
+);
+
+// Fonts
+// ------------------------------------------------
+$font-family-base: "Roboto", sans-serif;
+
+// All
+@import "all";

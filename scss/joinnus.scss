@@ -1,0 +1,16 @@
+@import "shared-config";
+
+// Define colors
+// ------------------------------------------------
+$theme-colors: (
+  "primary": #42a692,
+  "dark": #1a171b,
+  "action": #e83924,
+);
+
+// Fonts
+// ------------------------------------------------
+$font-family-base: "Poppins", sans-serif;
+
+// All
+@import "all";
