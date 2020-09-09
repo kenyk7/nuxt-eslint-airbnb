@@ -4,11 +4,10 @@
   "author": "@kenyk7",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development nodemon server.js --watch server",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "cross-env NODE_ENV=production node server.js",
     "export": "nuxt export",
-    "serve": "nuxt serve",
     "test": "jest"
   },
   "dependencies": {
@@ -16,6 +15,9 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
+    "consola": "^2.15.0",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {
@@ -31,6 +33,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.0.1",
     "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
     "sass-loader": "^8.0.2",
     "vue-jest": "^3.0.4"
   }
